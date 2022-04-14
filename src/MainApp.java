@@ -22,7 +22,7 @@ public class MainApp {
 
         manager.deposit(100.0, date("01/04/2022 12:45:53"));
         manager.deposit(200.0, date("05/04/2022 16:00:10"));
-        //manager.withdraw(70.0, date("10/04/2022 13:16:54"));
+        manager.withdraw(70.0, date("10/04/2022 13:16:54"));
         
         //account.printStatement(System.out);
         manager.printTransactionsHistory(System.out);

@@ -61,8 +61,9 @@ public final class AccountManager implements IAccountOperation{
             if(account.getBalance() - amount >=0){
                 double newBalance = account.getBalance() - amount;
                 account.notifyUpdate(accountManager, newBalance);
+            }else{
+                throw new Exception("the withdrawal is imposssible, no enough money!");
             }
-            throw new Exception("the withdrawal is imposssible, no enough money!");
         } catch (Exception ex) {
             Logger.getLogger(Transaction.class.getName()).log(Level.SEVERE, null, ex);
         }
