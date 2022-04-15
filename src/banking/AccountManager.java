@@ -22,6 +22,8 @@ public final class AccountManager implements IAccountOperation{
     
     //we assure that we manage only one account, in case these is many, we can store them in a linkedlist.
     private Account account;
+    /*in case there is many accounts, we could represent the the transactions data structure in a hashtable 
+     where the keys are the accounts' IDs and the values are the lists of transctions executed on each account*/
     private List<Transaction> transactions;
     private TransactionsPrinter txPrinter;
     
